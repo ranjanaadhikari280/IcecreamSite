@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 30px;
+    padding: 0;
+}
+
+.container {
+    
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.top-header {
+    background-color: pink;
+    height: 100px;
+    position: relative;
+}
+
+.header-address {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.header-socialmedia {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.header-socialmedia img {
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    width: 90%;
+    height: 90%;
+    top: 90%;
+    transform: translateY(-30%);
+    left: 5%;
+    right: 5%;
+    position: absolute;
+    border-radius: 50px;
+}
+
+header nav a {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.main-mid-section {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+    font-family: geneva;
+}
+
+.main-mid-section .about {
+    padding: 20px;
+    line-height: 1;
+}
+.main-mid-section .feature {
+    padding: 10px;
+    line-height: 1;
+}
+
+.main-mid-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.main-mid-section p,
+ul {
+    text-align: justify;
+    font-size: 1.2em;
+    color: grey;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-mid-section .about button{
+    background-color: skyblue;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+.main-mid-section .feature button {
+    background-color: pink;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.main-mid-section .about button:hover,
+.main-mid-section .feature button:hover {
+    background-color: hotpink;
+}
+
+.main-mid-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.order-now {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.order-now img {
+    max-width: 100%;
+    height: auto;
+}
+
+.order-now button {
+    background-color: hotpink;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.order-now button:hover {
+    background-color: deeppink;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightcoral;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial:hover {
+    background-color: gray;
+}
+
+.testimonial img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover img {
+    transform: scale(1.2);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: black;
+}
+
+/* New Styles */
+
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.team-member {
+    position: relative;
+    width: 25%;
+}
+
+.team-member img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+.team-member .overlay:hover {
+    opacity: 1;
+}
+
+.team-member .overlay-content {
+    text-align: center;
+}
+
+.team-member h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: white;
+    font-size: 1em;
+}
+
+.today-special {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.today-special img {
+    max-width: 100%;
+    height: auto;
+}
+
+.today-special .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.today-special .overlay:hover {
+    opacity: 1;
+}
+
+.today-special .overlay-content {
+    text-align: center;
+}
+
+.today-special h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.order-now {
+display: flex;
+flex-wrap: nowrap;
+}
+
+.order-now > div {
+background-color: #f1f1f1;
+width: 400px;
+margin: 10px;
+text-align: center;
+}
+
+.footer-section .overlay:hover {
+    opacity: 1;
+}
+
+.footer-section .overlay-content {
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: white;
+    font-size: 1.2em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image:hover::before {
+    opacity: 1;
+  }
+  
+  .image::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Add any additional styling or media queries as needed */
+  
